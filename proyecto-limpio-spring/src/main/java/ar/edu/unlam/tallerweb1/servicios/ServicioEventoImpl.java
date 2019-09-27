@@ -2,6 +2,7 @@ package ar.edu.unlam.tallerweb1.servicios;
 
 import ar.edu.unlam.tallerweb1.dao.EventoDao;
 import ar.edu.unlam.tallerweb1.modelo.Evento;
+import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,12 +22,16 @@ public class ServicioEventoImpl implements ServicioEvento {
     }
 
     @Override
+    public List consultarEventosUsuario (Usuario usuario) {
+        return eventoDao.consultarEventosUsuario(usuario);
+    }
+    @Override
     public boolean crearEventos(){
         try{
             eventoDao.crearEventos();
         return true;
         }catch (Exception e){
-        return false;
+             return false;
         }
     }
 }

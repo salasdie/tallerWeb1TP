@@ -1,15 +1,16 @@
 package ar.edu.unlam.tallerweb1.modelo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Evento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @ManyToOne
+    @JoinColumn (name = "USUARIO")
+    private Usuario usuario;
 
     private String nombre;
     private String descripcion;
@@ -20,12 +21,13 @@ public class Evento {
     public Evento(){}
 
 
-    public Evento(String nombre, String descripcion, String lugar, String urlImagen) {
+    public Evento(String nombre, String descripcion, String lugar, String urlImagen, Usuario usuario) {
 
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.lugar = lugar;
         this.urlImagen = urlImagen;
+        this.usuario = usuario;
     }
 
     public Long getId() {
@@ -62,6 +64,14 @@ public class Evento {
 
     public String getUrlImagen() {
         return urlImagen;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     public void setUrlImagen(String urlImagen) {

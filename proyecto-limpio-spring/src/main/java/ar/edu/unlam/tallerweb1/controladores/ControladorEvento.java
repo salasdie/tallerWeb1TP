@@ -1,6 +1,7 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
 import ar.edu.unlam.tallerweb1.modelo.Evento;
+import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.servicios.ServicioEvento;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,9 +26,12 @@ public class ControladorEvento {
         public ModelAndView eventos() {
             servicioEvento.crearEventos();
             ModelMap model = new ModelMap();
-            List<Evento> listaEventos = servicioEvento.consultarEvento();
+           List<Evento> listaEventos = servicioEvento.consultarEvento();
+
             model.put("eventos", listaEventos);
 
             return new ModelAndView("eventos", model);
     }
+
+
 }
