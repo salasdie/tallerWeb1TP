@@ -24,13 +24,19 @@ public class ControladorEvento {
 
     @RequestMapping(path = "/eventos", method = RequestMethod.GET)
         public ModelAndView eventos() {
-            servicioEvento.crearEventos();
+            //servicioEvento.crearEventos();
             ModelMap model = new ModelMap();
            List<Evento> listaEventos = servicioEvento.consultarEvento();
 
             model.put("eventos", listaEventos);
 
             return new ModelAndView("eventos", model);
+    }
+
+    @RequestMapping(path = "/crear", method = RequestMethod.GET)
+    public ModelAndView crear() {
+            servicioEvento.crearEventos();
+        return new ModelAndView("redirect:/eventos");
     }
 
 
