@@ -34,12 +34,14 @@ public class EventoDaoImpl implements EventoDao {
 
         final Session session = sessionFactory.getCurrentSession();
 
-        List<Evento> listaEventos = session.createCriteria(Evento.class)
+        List<Evento> eventosPorUsuario = session.createCriteria(Evento.class)
                      .add(Restrictions.eq("usuario", usuario))
                 .list();
 
-        return listaEventos;
+        return eventosPorUsuario;
     }
+
+
     @Override
     @PostConstruct
     @Transactional
