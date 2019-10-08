@@ -36,7 +36,7 @@ public class ControladorEvento {
     @RequestMapping(path = "/crear", method = RequestMethod.GET)
     public ModelAndView crear() {
             servicioEvento.crearEventos();
-        return new ModelAndView("redirect:/eventos");
+        return new ModelAndView("redirect:/login");
     }
 
 
