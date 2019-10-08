@@ -6,6 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -22,7 +23,7 @@ public class EventoDaoImpl implements EventoDao {
         final Session session = sessionFactory.getCurrentSession();
 
         List<Evento> listaEventos = session.createCriteria(Evento.class)
-               // .add(Restrictions.eq("lugar", lugar))
+
                 .list();
 
         return listaEventos;
@@ -40,10 +41,11 @@ public class EventoDaoImpl implements EventoDao {
         return listaEventos;
     }
     @Override
-    //@PostConstruct
+    @PostConstruct
+    @Transactional
     public void crearEventos(){
 
-        final Session session = sessionFactory.getCurrentSession();
+        final Session session = sessionFactory.openSession();
 
 
             Usuario mtvandoni = new Usuario();
@@ -71,14 +73,11 @@ public class EventoDaoImpl implements EventoDao {
             session.save(dchamorro);
             session.save(mendezOng);
 
+        Evento evento1 = new Evento("BA Corre", "Running, Caminatas, Acondicionamiento Fisico", "Recoleta, Plaza Houssay","https://www.quepasaweb.com.ar/wp-content/uploads/2018/07/caminata-3.png",mtvandoni);
 
-    // Creando eventos.
+        Evento evento2 = new Evento("Nucleos BA", "Basket, educacion fisica infantil y Voley.", "Flores, Espacio Juan XXIII","http://sansalvadordejujuy.gob.ar/wp-content/uploads/2017/05/Deportes-1.jpg", dchamorro);
 
-        Evento evento1 = new Evento("BA Corre", "Running, Caminatas, Acondicionamiento Físico", "Recoleta, Plaza Houssay","https://www.quepasaweb.com.ar/wp-content/uploads/2018/07/caminata-3.png",mtvandoni);
-
-        Evento evento2 = new Evento("Núcleos BA", "Basket, educación física infantil y Vóley.", "Flores, Espacio Juan XXIII","http://sansalvadordejujuy.gob.ar/wp-content/uploads/2017/05/Deportes-1.jpg", dchamorro);
-
-        Evento evento3 = new Evento("Núcleos BA", "Gimnasia para adultos", "Mataderos, Polideportivo Dorrego", "http://isanidad.com/wp-content/uploads/2017/05/ejercicio_mayores.jpg", dchamorro);
+        Evento evento3 = new Evento("Nucleos BA", "Gimnasia para adultos", "Mataderos, Polideportivo Dorrego", "http://isanidad.com/wp-content/uploads/2017/05/ejercicio_mayores.jpg", dchamorro);
 
         Evento evento4 = new Evento("BA Zona Oeste", "Gimnasia para Jovenes", "Mataderos, Polideportivo Dorrego", "http://isanidad.com/wp-content/uploads/2017/05/ejercicio_mayores.jpg", mendezOng);
 

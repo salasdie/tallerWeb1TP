@@ -28,7 +28,7 @@ public class EventoTest extends SpringTest {
         dao.crearEventos();
         List<Evento> listaEventos = dao.consultarEvento();
 
-        assertThat(listaEventos.size()).isEqualTo(3);
+        assertThat(listaEventos.size()).isEqualTo(4);
 
 
     }
