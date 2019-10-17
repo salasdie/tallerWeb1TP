@@ -7,5 +7,6 @@ import java.util.List;
 public interface ServicioEvento {
     List<Evento> consultarEvento ();
     List<Evento> consultarEventosUsuario (Usuario usuario);
+    List<Evento> consultarEventosDificultad (String dificultad);
     boolean crearEventos();
 }

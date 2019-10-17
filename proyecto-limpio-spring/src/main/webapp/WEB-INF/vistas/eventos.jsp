@@ -29,7 +29,7 @@
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
             <a class="navbar-brand brand-logo" href="index.html">
-               SportApp </a>
+                SportApp </a>
             <a class="navbar-brand brand-logo-mini" href="index.html">
                 <img src="images/logo-mini.svg" alt="logo" /> </a>
         </div>
@@ -74,7 +74,7 @@
                 </li>
                 <li class="nav-item nav-category">Menu</li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="/proyecto_limpio_spring_war/eventos">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Eventos</span>
                     </a>
@@ -86,9 +86,18 @@
             <div class="content-wrapper">
                 <!-- Page Title Header Starts-->
                 <div class="row page-title-header">
-                    <div class="col-12">
+                    <div class="col-6">
                         <div class="page-header">
                             <h4 class="page-title">Eventos</h4>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="page-title">
+                            <h4 class="page-title">Dificultad: </h4>
+                            <form action="filtro-busqueda" method="get" >
+                                <input name="dificultad" id="eventos" type="text" value=""/>
+                                <button class="btn btn-sm btn-primary btn-block text-uppercase" type="submit">Buscar</button>
+                            </form>
                         </div>
                     </div>
                 </div>

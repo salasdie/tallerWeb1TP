@@ -22,49 +22,38 @@
 
 </head>
 <body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+				<div class="card card-signin my-5">
+					<div class="card-body">
+						<h5 class="card-title text-center">Bienvenido</h5>
+						<form:form action="validar-login" method="POST" modelAttribute="usuario" class="form-signin validate-form">
+							<div class="form-label-group validate-input" data-validate = "Enter username">
+								<form:input path="email" id="email" type="email" class="form-control input100" name="username" placeholder="Usuario"/>
+								<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+							</div>
 
-
-
-<div class="limiter">
-<div class="container-login100">
-<div class="wrap-login100 p-t-30 p-b-50">
-<span class="login100-form-title p-b-41">
-					Taller Web 1
-				</span>
-<form:form action="validar-login" method="POST" modelAttribute="usuario" class="login100-form validate-form p-b-33 p-t-5">
-
-
-		<div class="wrap-input100 validate-input" data-validate = "Enter username">
-			<form:input path="email" id="email" type="email" class="input100" name="username" placeholder="Usuario"/>
-			<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+							<div class="form-label-group validate-input" data-validate="Enter password">
+								<form:input path="password" type="password" id="password" class="form-control input100"  name="pass" placeholder="Contrasena"/>
+								<span class="focus-input100" data-placeholder="&#xe80f;"></span>
+							</div>
+							<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Ingresar</button>
+							<hr class="my-4">
+<%--							<button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>--%>
+<%--							<button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>--%>
+						</form:form>
+					</div>
+					<%--Bloque que es visible si el elemento error no está vacío	--%>
+					<c:if test="${not empty error}">
+						<p class=" text-center" style="color:red;font-weight:bold">${error}</p>
+						<br>
+					</c:if>
+				</div>
+			</div>
 		</div>
-
-		<div class="wrap-input100 validate-input" data-validate="Enter password">
-			<form:input path="password" type="password" id="password" class="input100"  name="pass" placeholder="Contrasena"/>
-			<span class="focus-input100" data-placeholder="&#xe80f;"></span>
-		</div>
-
-		<div class="container-login100-form-btn m-t-32">
-			<button class="login100-form-btn" Type="Submit"/>
-			Iniciar sesion
-			</button>
-		</div>
-
-	</form:form>
-
 	</div>
-	</div>
-	</div>
-
-
 	<div id="dropDownSelect1"></div>
-
-
-
-
-
-
-
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
 	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
@@ -78,6 +67,8 @@
 	<script src="vendor/daterangepicker/moment.min.js"></script>
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="jquery.slim.min.js"></script>
+	<script src="bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>
-	</body>
-	</html>
+</body>
+</html>

@@ -11,6 +11,8 @@ public interface EventoDao {
 
     List<Evento> consultarEventosUsuario(Usuario usuario);
 
+    List<Evento> consultarEventoDificultad(String dificultad);
+
     void crearEventos();
 
 }

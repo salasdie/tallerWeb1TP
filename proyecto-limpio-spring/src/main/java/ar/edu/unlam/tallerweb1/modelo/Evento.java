@@ -16,17 +16,19 @@ public class Evento {
     private String descripcion;
     private String lugar;
     private String urlImagen;
+    private String dificultad;
 
 
     public Evento(){}
 
 
-    public Evento(String nombre, String descripcion, String lugar, String urlImagen, Usuario usuario) {
+    public Evento(String nombre, String descripcion, String lugar, String urlImagen, String dificultad, Usuario usuario) {
 
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.lugar = lugar;
         this.urlImagen = urlImagen;
+        this.dificultad = dificultad;
         this.usuario = usuario;
     }
 
@@ -66,6 +68,10 @@ public class Evento {
         return urlImagen;
     }
 
+    public void setUrlImagen(String urlImagen) {
+        this.urlImagen = urlImagen;
+    }
+
     public Usuario getUsuario() {
         return usuario;
     }
@@ -74,7 +80,11 @@ public class Evento {
         this.usuario = usuario;
     }
 
-    public void setUrlImagen(String urlImagen) {
-        this.urlImagen = urlImagen;
+    public String getDificultad() {
+        return dificultad;
+    }
+
+    public void setDificultad(String dificultad) {
+        this.dificultad = dificultad;
     }
 }

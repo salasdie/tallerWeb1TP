@@ -41,6 +41,18 @@ public class EventoDaoImpl implements EventoDao {
         return eventosPorUsuario;
     }
 
+    @Override
+    public List<Evento> consultarEventoDificultad(String dificultad) {
+
+        final Session session = sessionFactory.getCurrentSession();
+
+        List<Evento> eventosPorDificultad = session.createCriteria(Evento.class)
+                //.createCriteria("dificultad", "d" )
+                .add(Restrictions.eq("dificultad", dificultad))
+                .list();
+        return eventosPorDificultad;
+    }
+
 
     @Override
     @PostConstruct
@@ -75,13 +87,13 @@ public class EventoDaoImpl implements EventoDao {
             session.save(dchamorro);
             session.save(mendezOng);
 
-        Evento evento1 = new Evento("BA Corre", "Running, Caminatas, Acondicionamiento Fisico", "Recoleta, Plaza Houssay","https://www.quepasaweb.com.ar/wp-content/uploads/2018/07/caminata-3.png",mtvandoni);
+        Evento evento1 = new Evento("BA Corre", "Running, Caminatas, Acondicionamiento Fisico", "Recoleta, Plaza Houssay","https://www.quepasaweb.com.ar/wp-content/uploads/2018/07/caminata-3.png", "baja", mtvandoni);
 
-        Evento evento2 = new Evento("Nucleos BA", "Basket, educacion fisica infantil y Voley.", "Flores, Espacio Juan XXIII","http://sansalvadordejujuy.gob.ar/wp-content/uploads/2017/05/Deportes-1.jpg", dchamorro);
+        Evento evento2 = new Evento("Nucleos BA", "Basket, educacion fisica infantil y Voley.", "Flores, Espacio Juan XXIII","http://sansalvadordejujuy.gob.ar/wp-content/uploads/2017/05/Deportes-1.jpg","alta" ,dchamorro);
 
-        Evento evento3 = new Evento("Nucleos BA", "Gimnasia para adultos", "Mataderos, Polideportivo Dorrego", "http://isanidad.com/wp-content/uploads/2017/05/ejercicio_mayores.jpg", dchamorro);
+        Evento evento3 = new Evento("Nucleos BA", "Gimnasia para adultos", "Mataderos, Polideportivo Dorrego", "http://isanidad.com/wp-content/uploads/2017/05/ejercicio_mayores.jpg", "media",dchamorro);
 
-        Evento evento4 = new Evento("BA Zona Oeste", "Gimnasia para Jovenes", "Mataderos, Polideportivo Dorrego", "http://isanidad.com/wp-content/uploads/2017/05/ejercicio_mayores.jpg", mendezOng);
+        Evento evento4 = new Evento("BA Zona Oeste", "Gimnasia para Jovenes", "Mataderos, Polideportivo Dorrego", "http://isanidad.com/wp-content/uploads/2017/05/ejercicio_mayores.jpg","baja", mendezOng);
 
         session.save(evento1);
 

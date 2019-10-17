@@ -8,9 +8,11 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +33,17 @@ public class ControladorEvento {
             model.put("eventos", listaEventos);
 
             return new ModelAndView("eventos", model);
+    }
+
+    @RequestMapping(path = "/filtro-busqueda" ,method = RequestMethod.GET)
+    public ModelAndView filtrarPorDificultad(@RequestParam("dificultad") String dificultad , HttpServletRequest request) {
+        ModelMap model = new ModelMap();
+
+        List<Evento> listaEventosFiltrados = servicioEvento.consultarEventosDificultad(dificultad);
+
+        model.put("eventos", listaEventosFiltrados);
+
+        return new ModelAndView("eventos", model);
     }
 
     @RequestMapping(path = "/crear", method = RequestMethod.GET)

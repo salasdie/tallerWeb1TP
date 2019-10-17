@@ -6,34 +6,135 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba37a95f-b23e-4042-ae81-78d71604913b" name="Default Changelist" comment="vista login">
+    <list default="true" id="e4dca011-965e-4b1a-baed-e37ccb1b830b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/eventos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/eventos.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/edu/unlam/tallerweb1/persistencia/EventoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/edu/unlam/tallerweb1/persistencia/EventoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/dao/EventoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/dao/EventoDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/modelo/Evento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/modelo/Evento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/modelo/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/modelo/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/dao/EventoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/dao/EventoDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/modelo/Evento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/modelo/Evento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/modelo/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/modelo/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/classes/spring-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/vistas/eventos.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/vistas/eventos.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/vistas/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/vistas/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/vistas/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/WEB-INF/vistas/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/css/login/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/css/login/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/css/login/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/css/login/util.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/iconic/css/material-design-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/poppins/Poppins-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/UFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/fonts/ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/images/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/js/jquery-1.11.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/vendor/bootstrap/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/vendor/bootstrap/js/tooltip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/vendor/daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/proyecto-limpio-spring-0.0.1-SNAPSHOT/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ar/edu/unlam/tallerweb1/persistencia/EventoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ar/edu/unlam/tallerweb1/persistencia/EventoTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,113 +144,34 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/login.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Evento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+            <state relative-caret-position="1054">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-              <folding>
-                <element signature="e#2930#2931#0" expanded="true" />
-                <element signature="e#3128#3129#0" expanded="true" />
-                <element signature="e#3177#3178#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -157,52 +179,79 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/eventos.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="98" column="57" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/login.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlam/tallerweb1/persistencia/EventoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>opacity</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Diego salas &lt;diegonsalas@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/eventos.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Evento.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Evento.java" />
         <option value="$PROJECT_DIR$/src/test/java/ar/edu/unlam/tallerweb1/persistencia/EventoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/css/login.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/login/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLogin.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/eventos.jsp" />
       </list>
     </option>
   </component>
@@ -220,9 +269,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="5" />
-    <option name="y" value="-19" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="270" />
+    <option name="y" value="-25" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -232,18 +281,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="proyecto-limpio-spring" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="proyecto-limpio-spring" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,47 +357,7 @@
               <item name="proyecto-limpio-spring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto-limpio-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto-limpio-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto-limpio-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto-limpio-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto-limpio-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto-limpio-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto-limpio-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto-limpio-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proyecto-limpio-spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyecto-limpio-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="proyecto-limpio-spring" type="b2602c69:ProjectViewProjectNode" />
@@ -417,7 +416,6 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TP/dev-betsalah-master/dev-betsalah-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -426,6 +424,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -440,6 +439,21 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.93">
+    <configuration name="EventoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-limpio-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.edu.unlam.tallerweb1.persistencia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.edu.unlam.tallerweb1.persistencia" />
+      <option name="MAIN_CLASS_NAME" value="ar.edu.unlam.tallerweb1.persistencia.EventoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EventoTest.CrearYConsultarEventos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto-limpio-spring" />
       <extension name="coverage">
@@ -472,10 +486,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EventoTest.listarEventosPorDificultad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-limpio-spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.edu.unlam.tallerweb1.persistencia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.edu.unlam.tallerweb1.persistencia" />
+      <option name="MAIN_CLASS_NAME" value="ar.edu.unlam.tallerweb1.persistencia.EventoTest" />
+      <option name="METHOD_NAME" value="listarEventosPorDificultad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 7.0.93" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.93" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/proyecto_limpio_spring_war/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="proyecto-limpio-spring:war">
           <settings>
@@ -484,7 +513,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_proyecto-limpio-spring_14" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_proyecto-limpio-spring_16" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -492,7 +521,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="62469" />
+        <option name="DEBUG_PORT" value="51067" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -546,15 +575,104 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.EventoTest.listarEventosCreadoPor" />
-      <item itemvalue="JUnit.EventoTest.CrearYConsultarEventos" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0.93" />
-    </list>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_proyecto-limpio-spring" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51067" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51066" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EventoTest.CrearYConsultarEventos" />
+        <item itemvalue="JUnit.EventoTest" />
         <item itemvalue="JUnit.EventoTest.listarEventosCreadoPor" />
+        <item itemvalue="JUnit.EventoTest.listarEventosPorDificultad" />
+        <item itemvalue="JUnit.EventoTest.CrearYConsultarEventos" />
       </list>
     </recent_temporary>
   </component>
@@ -563,67 +681,66 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ba37a95f-b23e-4042-ae81-78d71604913b" name="Default Changelist" comment="" />
-      <created>1569525123651</created>
+      <changelist id="e4dca011-965e-4b1a-baed-e37ccb1b830b" name="Default Changelist" comment="" />
+      <created>1570564165074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569525123651</updated>
-      <workItem from="1569525125385" duration="243000" />
-      <workItem from="1569527227659" duration="1128000" />
-      <workItem from="1569538268926" duration="6227000" />
-      <workItem from="1569852989734" duration="3498000" />
-      <workItem from="1569883600757" duration="4869000" />
-      <workItem from="1570142840174" duration="3462000" />
-      <workItem from="1570276795830" duration="6421000" />
-      <workItem from="1570399534244" duration="4625000" />
-      <workItem from="1570405895756" duration="11424000" />
-      <workItem from="1570468105767" duration="4597000" />
-      <workItem from="1570500193292" duration="4853000" />
+      <updated>1570564165074</updated>
+      <workItem from="1570564169196" duration="315000" />
+      <workItem from="1570581220143" duration="1360000" />
+      <workItem from="1570583817664" duration="526000" />
+      <workItem from="1570674728823" duration="2332000" />
+      <workItem from="1570747161348" duration="4711000" />
+      <workItem from="1570820736991" duration="1516000" />
+      <workItem from="1571058500543" duration="1579000" />
+      <workItem from="1571070619029" duration="15000" />
+      <workItem from="1571071359906" duration="468000" />
+      <workItem from="1571150850130" duration="6312000" />
+      <workItem from="1571190823510" duration="4029000" />
+      <workItem from="1571271850359" duration="1833000" />
     </task>
-    <task id="LOCAL-00001" summary="separo el crear eventos">
-      <created>1569856402046</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1569856402046</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EventoTest_listarEventosCreadoPor - 2019.09.26 at 21h 08m 48s.xml">
-      <configuration name="EventoTest.listarEventosCreadoPor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EventoTest_listarEventosCreadoPor - 2019.09.26 at 21h 09m 36s.xml">
-      <configuration name="EventoTest.listarEventosCreadoPor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EventoTest_listarEventosCreadoPor - 2019.09.26 at 21h 26m 25s.xml">
-      <configuration name="EventoTest.listarEventosCreadoPor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EventoTest_CrearYConsultarEventos - 2019.09.26 at 21h 26m 43s.xml">
+    <history-entry file="EventoTest_CrearYConsultarEventos - 2019.10.15 at 22h 56m 57s.xml">
       <configuration name="EventoTest.CrearYConsultarEventos" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EventoTest_CrearYConsultarEventos - 2019.09.26 at 21h 26m 53s.xml">
+    <history-entry file="EventoTest_CrearYConsultarEventos - 2019.10.15 at 22h 59m 00s.xml">
       <configuration name="EventoTest.CrearYConsultarEventos" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest_CrearYConsultarEventos - 2019.10.15 at 23h 00m 24s.xml">
+      <configuration name="EventoTest.CrearYConsultarEventos" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest_listarEventosCreadoPor - 2019.10.15 at 23h 01m 27s.xml">
+      <configuration name="EventoTest.listarEventosCreadoPor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest_listarEventosPorDificultad - 2019.10.15 at 23h 03m 37s.xml">
+      <configuration name="EventoTest.listarEventosPorDificultad" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest_listarEventosPorDificultad - 2019.10.15 at 23h 04m 02s.xml">
+      <configuration name="EventoTest.listarEventosPorDificultad" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest_listarEventosPorDificultad - 2019.10.15 at 23h 04m 21s.xml">
+      <configuration name="EventoTest.listarEventosPorDificultad" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest_listarEventosCreadoPor - 2019.10.15 at 23h 08m 47s.xml">
+      <configuration name="EventoTest.listarEventosCreadoPor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest - 2019.10.15 at 23h 08m 57s.xml">
+      <configuration name="EventoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventoTest - 2019.10.15 at 23h 09m 16s.xml">
+      <configuration name="EventoTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51347000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="24996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27046978" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3067114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -633,27 +750,27 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.36827195" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.56373936" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013423" side_tool="true" weight="0.3569405" />
-      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3753541" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.407932" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -661,225 +778,101 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="separo el crear eventos" />
-    <MESSAGE value="vista login" />
-    <option name="LAST_COMMIT_MESSAGE" value="vista login" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernateContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="357" column="20" lean-forward="true" selection-start-line="357" selection-start-column="20" selection-end-line="357" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlam/tallerweb1/persistencia/EventoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/css/login.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2371" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/eventos.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5129">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3538">
-          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioLoginImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="170">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding>
-            <element signature="e#2930#2931#0" expanded="true" />
-            <element signature="e#3128#3129#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/EventoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/modelo/Evento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEventoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/servicios/ServicioEvento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/login.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlam/tallerweb1/persistencia/EventoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="816">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/home.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/dao/UsuarioDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorEvento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlam/tallerweb1/controladores/ControladorLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/vistas/eventos.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="98" column="57" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

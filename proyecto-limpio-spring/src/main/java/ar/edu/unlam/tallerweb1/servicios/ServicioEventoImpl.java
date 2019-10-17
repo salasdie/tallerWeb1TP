@@ -25,6 +25,11 @@ public class ServicioEventoImpl implements ServicioEvento {
     public List consultarEventosUsuario (Usuario usuario) {
         return eventoDao.consultarEventosUsuario(usuario);
     }
+
+    @Override
+    public List<Evento> consultarEventosDificultad(String dificultad) {
+        return  eventoDao.consultarEventoDificultad(dificultad); }
+
     @Override
     public boolean crearEventos(){
         try{
