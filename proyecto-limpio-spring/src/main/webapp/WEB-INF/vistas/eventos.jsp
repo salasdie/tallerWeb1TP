@@ -24,6 +24,8 @@
     <!-- End Layout styles -->
 </head>
 <body>
+
+
 <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -67,7 +69,7 @@
                             <div class="dot-indicator bg-success"></div>
                         </div>
                         <div class="text-wrapper">
-                            <p class="profile-name">Usuario</p>
+                            <p class="profile-name">${usuarioBuscado.email}</p>
                             <p class="designation">Profesor</p>
                         </div>
                     </a>

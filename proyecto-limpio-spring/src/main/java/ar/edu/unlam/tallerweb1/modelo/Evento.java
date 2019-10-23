@@ -9,7 +9,7 @@ public class Evento {
     private Long id;
 
     @ManyToOne
-    @JoinColumn (name = "USUARIO")
+
     private Usuario usuario;
 
     private String nombre;
@@ -17,7 +17,6 @@ public class Evento {
     private String lugar;
     private String urlImagen;
     private String dificultad;
-
 
     public Evento(){}
 

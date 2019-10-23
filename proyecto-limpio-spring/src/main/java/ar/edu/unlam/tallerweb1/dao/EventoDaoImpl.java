@@ -1,5 +1,6 @@
 package ar.edu.unlam.tallerweb1.dao;
 
+import ar.edu.unlam.tallerweb1.modelo.Suscripcion;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.modelo.Evento;
 import org.hibernate.Session;
@@ -102,6 +103,16 @@ public class EventoDaoImpl implements EventoDao {
         session.save(evento3);
 
         session.save(evento4);
+
+        Suscripcion suscripcion1 = new Suscripcion(mtvandoni, evento1);
+        Suscripcion suscripcion2 = new Suscripcion(mendezOng, evento1);
+        Suscripcion suscripcion3 = new Suscripcion(mtvandoni, evento2);
+
+
+        session.save(suscripcion1);
+        session.save(suscripcion2);
+        session.save(suscripcion3);
+
     }
 
 }

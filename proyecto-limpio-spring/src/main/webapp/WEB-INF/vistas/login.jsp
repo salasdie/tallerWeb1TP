@@ -33,7 +33,6 @@
 								<form:input path="email" id="email" type="email" class="form-control input100" name="username" placeholder="Usuario"/>
 								<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 							</div>
-
 							<div class="form-label-group validate-input" data-validate="Enter password">
 								<form:input path="password" type="password" id="password" class="form-control input100"  name="pass" placeholder="Contrasena"/>
 								<span class="focus-input100" data-placeholder="&#xe80f;"></span>

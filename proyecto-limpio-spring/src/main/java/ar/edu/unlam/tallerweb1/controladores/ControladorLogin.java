@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
+
 import ar.edu.unlam.tallerweb1.servicios.ServicioLogin;
 
 @Controller
@@ -37,11 +38,14 @@ public class ControladorLogin {
 	public ModelAndView validarLogin(@ModelAttribute("usuario") Usuario usuario, HttpServletRequest request) {
 		ModelMap model = new ModelMap();
 
-
 		Usuario usuarioBuscado = servicioLogin.consultarUsuario(usuario);
+
 		if (usuarioBuscado != null) {
 			request.getSession().setAttribute("ROL", usuarioBuscado.getRol());
-			return new ModelAndView("redirect:/eventos");
+
+			model.put("usuarioB", usuarioBuscado);
+
+			return new ModelAndView("redirect:/eventos", model);
 		} else {
 
 			model.put("error", "Usuario o clave incorrecta");

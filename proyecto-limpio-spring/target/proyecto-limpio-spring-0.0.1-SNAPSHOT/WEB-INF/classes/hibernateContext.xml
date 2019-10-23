@@ -35,6 +35,7 @@
 				<!--update: aplica cambios realizados-->
 				<!--none: no modifica nunca el esquema de datos-->
 				<prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+
 			</props>
 		</property>
 		<!--Se configura qué paquetes debe escanear hibernate en busca de clases persistibles, es decir-->
@@ -50,6 +51,8 @@
 	<!--Se declara el transaction manager de la aplicacion asociado con la db configurada antes-->
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
-		<property name="sessionFactory" ref="sessionFactory" />
+		<property name="sessionFactory" ref="sessionFactory">
+
+		</property>
 	</bean>
 </beans>
