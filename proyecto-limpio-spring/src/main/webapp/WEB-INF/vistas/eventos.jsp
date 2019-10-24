@@ -11,6 +11,7 @@
     <title>Eventos</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendor/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendor/iconfonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="vendor/iconfonts/ionicons/css/ionicons.css">
     <link rel="stylesheet" href="vendor/iconfonts/typicons/src/font/typicons.css">
     <link rel="stylesheet" href="vendor/iconfonts/flag-icon-css/css/flag-icon.min.css">
@@ -86,51 +87,94 @@
             <div class="content-wrapper">
                 <!-- Page Title Header Starts-->
                 <div class="row page-title-header">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="page-header">
                             <h4 class="page-title">Eventos</h4>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="page-title">
-                            <h4 class="page-title">Dificultad: </h4>
-                            <form action="filtro-busqueda" method="get" >
-                                <input name="dificultad" id="eventos" type="text" value=""/>
-                                <button class="btn btn-sm btn-primary btn-block text-uppercase" type="submit">Buscar</button>
-                            </form>
-                        </div>
+                </div>
+                <div class="page-title">
+                    <h4 class="page-title">Filtrar búsqueda por:</h4>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-2">
+<%--                        <form action="filtro-busquedaDificultad" method="get">--%>
+<%--                            <div class="form-group">--%>
+<%--                                <label>Dificultad</label>--%>
+<%--                                <div class="input-group">--%>
+<%--                                    <input class="form-control" name="dificultad" id="eventosDificultad" type="text" value="">--%>
+<%--                                    <button class="btn btn-primary text-uppercase" type="submit">Buscar</button>--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+<%--                        </form>--%>
+                        <form action="filtro-busquedaDificultad" method= "get">
+                            <div class="form-group">
+                                <label>Dificultad</label>
+                                <div class="input-group">
+                                    <select class="form-control" name="dificultad" id="eventosDificultad">
+                                        <option value="">Seleccionar..</option>
+                                        <c:forEach items="${eventos}" var="evento">
+                                            <option value="${evento.dificultad}">${evento.dificultad}</option>
+                                        </c:forEach>
+                                    </select>
+                                    <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-2">
+                        <form action="filtro-busquedaLugar" method="get">
+                            <div class="form-group">
+                                <label>Lugar</label>
+                                <div class="input-group">
+                                <input class="form-control" name="lugar" id="eventosLugar" type="text">
+<%--                                    <select class="form-control" name="lugar" id="eventosLugar">--%>
+<%--                                        <option value="">Seleccionar..</option>--%>
+<%--                                        <c:forEach items="${eventos}" var="evento">--%>
+<%--                                            <option value="${evento.lugar}">${evento.lugar}</option>--%>
+<%--                                        </c:forEach>--%>
+<%--                                    </select>--%>
+                                    <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <!-- Page Title Header Ends-->
-                <div class="row">
-                    <div class="col-lg-12 grid-margin stretch-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                    <tr>
-                                        <th>Nombre</th>
-                                        <th>Actividades</th>
-                                        <th>Lugar</th>
-                                        <th></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <c:forEach items="${eventos}" var="evento">
-                                        <tr>
-                                            <td>${evento.nombre}</td>
-                                            <td>${evento.descripcion}</td>
-                                            <td>${evento.lugar}</td>
-                                            <td><img src="${evento.urlImagen}" width="300" class="rounded"></td>
-                                        </tr>
-                                    </c:forEach>
 
-                                    </tbody>
-                                </table>
+                <form action="filtro">
+                <!-- Page Title Header Ends-->
+                    <div class="row">
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Actividades</th>
+                                            <th>Lugar</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <c:forEach items="${eventos}" var="evento">
+                                            <tr>
+                                                <td>${evento.nombre}</td>
+                                                <td>${evento.descripcion}</td>
+                                                <td>${evento.lugar}</td>
+                                                <td><img src="${evento.urlImagen}" width="300" class="rounded"></td>
+                                            </tr>
+                                        </c:forEach>
+
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
 
             </div>
             <!-- content-wrapper ends -->

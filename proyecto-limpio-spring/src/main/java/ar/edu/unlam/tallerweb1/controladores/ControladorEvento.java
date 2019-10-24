@@ -1,5 +1,6 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
+import ar.edu.unlam.tallerweb1.modelo.Dificultad;
 import ar.edu.unlam.tallerweb1.modelo.Evento;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.servicios.ServicioEvento;
@@ -13,8 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 
 @Controller
@@ -35,12 +35,22 @@ public class ControladorEvento {
             return new ModelAndView("eventos", model);
     }
 
-    @RequestMapping(path = "/filtro-busqueda" ,method = RequestMethod.GET)
+    @RequestMapping(path = "/filtro-busquedaDificultad" ,method = RequestMethod.GET)
     public ModelAndView filtrarPorDificultad(@RequestParam("dificultad") String dificultad , HttpServletRequest request) {
         ModelMap model = new ModelMap();
 
         List<Evento> listaEventosFiltrados = servicioEvento.consultarEventosDificultad(dificultad);
 
+        model.put("eventos", listaEventosFiltrados);
+
+        return new ModelAndView("redirect:/eventos", model);
+    }
+
+    @RequestMapping(path = "/filtro-busquedaLugar", method = RequestMethod.GET)
+    public ModelAndView filtrarPorLugar(@RequestParam("lugar") String lugar, HttpServletRequest request) {
+        ModelMap model = new ModelMap();
+
+        List<Evento> listaEventosFiltrados = servicioEvento.consultarEventosLugar(lugar);
         model.put("eventos", listaEventosFiltrados);
 
         return new ModelAndView("eventos", model);

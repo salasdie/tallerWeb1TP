@@ -1,5 +1,6 @@
 package ar.edu.unlam.tallerweb1.dao;
 
+import ar.edu.unlam.tallerweb1.modelo.Dificultad;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import ar.edu.unlam.tallerweb1.modelo.Evento;
 import org.hibernate.Session;
@@ -53,6 +54,28 @@ public class EventoDaoImpl implements EventoDao {
         return eventosPorDificultad;
     }
 
+    @Override
+    public List<Evento> consultarEventoLugar(String lugar){
+        final Session session = sessionFactory.getCurrentSession();
+
+        List<Evento> eventosPorLugar = session.createCriteria(Evento.class)
+                .add(Restrictions.like("lugar", lugar+"%"))
+                .list();
+        return eventosPorLugar;
+    }
+
+//    @Override
+//    public List<Evento> consultarEventosPorDificultad (String dificultad) {
+//
+//        final Session session = sessionFactory.getCurrentSession();
+//
+//        List<Evento> listaEventosPorNombre = session.createCriteria(Evento.class)
+//                .add(Restrictions.eq("dificultad", dificultad))
+//                .list();
+//
+//        return listaEventosPorNombre;
+//    }
+
 
     @Override
     @PostConstruct
@@ -61,31 +84,41 @@ public class EventoDaoImpl implements EventoDao {
 
         final Session session = sessionFactory.openSession();
 
+        Usuario mtvandoni = new Usuario();
+        mtvandoni.setEmail("mtvandoni@gmail.com");
+        mtvandoni.setPassword("123456");
+        mtvandoni.setRol("Alumno");
 
-            Usuario mtvandoni = new Usuario();
-            mtvandoni.setEmail("mtvandoni@gmail.com");
-            mtvandoni.setPassword("123456");
-            mtvandoni.setRol("Alumno");
+        Usuario riverPLate = new Usuario();
+        riverPLate.setEmail("riverplate@gmail.com");
+        riverPLate.setPassword("muñeco");
+        riverPLate.setRol("Empresa");
 
-            Usuario riverPLate = new Usuario();
-            riverPLate.setEmail("riverplate@gmail.com");
-            riverPLate.setPassword("muñeco");
-            riverPLate.setRol("Empresa");
+        Usuario dchamorro = new Usuario();
+        dchamorro.setEmail("dchamorro@gmail.com");
+        dchamorro.setPassword("12345");
+        dchamorro.setRol("Profesor");
 
-            Usuario dchamorro = new Usuario();
-            dchamorro.setEmail("dchamorro@gmail.com");
-            dchamorro.setPassword("12345");
-            dchamorro.setRol("Profesor");
+        Usuario mendezOng = new Usuario();
+        riverPLate.setEmail("mendezOng@gmail.com");
+        riverPLate.setPassword("098766");
+        riverPLate.setRol("ONG");
 
-            Usuario mendezOng = new Usuario();
-            riverPLate.setEmail("mendezOng@gmail.com");
-            riverPLate.setPassword("098766");
-            riverPLate.setRol("ONG");
+        session.save(mtvandoni);
+        session.save(riverPLate);
+        session.save(dchamorro);
+        session.save(mendezOng);
 
-            session.save(mtvandoni);
-            session.save(riverPLate);
-            session.save(dchamorro);
-            session.save(mendezOng);
+        Dificultad alta = new Dificultad();
+        alta.setDescripcion("Alta");
+        Dificultad media = new Dificultad();
+        media.setDescripcion("Media");
+        Dificultad baja = new Dificultad();
+        baja.setDescripcion("Baja");
+
+        session.save(alta);
+        session.save(media);
+        session.save(baja);
 
         Evento evento1 = new Evento("BA Corre", "Running, Caminatas, Acondicionamiento Fisico", "Recoleta, Plaza Houssay","https://www.quepasaweb.com.ar/wp-content/uploads/2018/07/caminata-3.png", "baja", mtvandoni);
 

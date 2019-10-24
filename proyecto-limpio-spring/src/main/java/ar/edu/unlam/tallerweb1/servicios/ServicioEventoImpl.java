@@ -1,6 +1,7 @@
 package ar.edu.unlam.tallerweb1.servicios;
 
 import ar.edu.unlam.tallerweb1.dao.EventoDao;
+import ar.edu.unlam.tallerweb1.modelo.Dificultad;
 import ar.edu.unlam.tallerweb1.modelo.Evento;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import org.springframework.stereotype.Service;
@@ -29,6 +30,16 @@ public class ServicioEventoImpl implements ServicioEvento {
     @Override
     public List<Evento> consultarEventosDificultad(String dificultad) {
         return  eventoDao.consultarEventoDificultad(dificultad); }
+
+    @Override
+    public List<Evento> consultarEventosLugar(String lugar){
+        return eventoDao.consultarEventoLugar(lugar);
+    }
+
+//    @Override
+//    public List<Evento> consultarEventosPorDificultad (String dificultad){
+//        return eventoDao.consultarEventosPorDificultad(dificultad);
+//    }
 
     @Override
     public boolean crearEventos(){
