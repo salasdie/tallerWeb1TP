@@ -18,6 +18,9 @@ public class Evento {
     private String descripcion;
     private String lugar;
     private String urlImagen;
+
+//    @ManyToOne
+//    @JoinColumn (name = "DIFICULTAD")
     private String dificultad;
     private Double CalEstimadasQuemadas;
 

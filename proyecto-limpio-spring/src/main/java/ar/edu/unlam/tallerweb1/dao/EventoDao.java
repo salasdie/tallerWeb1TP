@@ -1,5 +1,6 @@
 package ar.edu.unlam.tallerweb1.dao;
 
+import ar.edu.unlam.tallerweb1.modelo.Dificultad;
 import ar.edu.unlam.tallerweb1.modelo.Evento;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 
@@ -13,6 +14,9 @@ public interface EventoDao {
 
     List<Evento> consultarEventoDificultad(String dificultad);
 
+    List<Evento> consultarEventoLugar(String lugar);
+
+//     List<Evento> consultarEventosPorDificultad (String dificultad);
     void crearEventos();
 
 }
