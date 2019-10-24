@@ -61,18 +61,24 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
                 <li class="nav-item nav-profile">
-                    <a href="#" class="nav-link">
+                    <a methods="get" href="/perfilUsuario"  class="nav-link">
                         <div class="profile-image">
                             <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="profile image">
                             <div class="dot-indicator bg-success"></div>
                         </div>
                         <div class="text-wrapper">
-                            <p class="profile-name">Usuario</p>
-                            <p class="designation">Profesor</p>
+                            <p class="profile-name" >${nombre}</p>
+                            <p class="designation">${rol}</p>
                         </div>
                     </a>
                 </li>
                 <li class="nav-item nav-category">Menu</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/proyecto_limpio_spring_war/eventos">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Perfil</span>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/proyecto_limpio_spring_war/eventos">
                         <i class="menu-icon typcn typcn-document-text"></i>

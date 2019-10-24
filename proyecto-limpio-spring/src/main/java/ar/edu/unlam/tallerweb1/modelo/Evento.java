@@ -1,6 +1,8 @@
 package ar.edu.unlam.tallerweb1.modelo;
 
 import javax.persistence.*;
+import java.util.LinkedList;
+import java.util.List;
 
 @Entity
 public class Evento {
@@ -9,7 +11,7 @@ public class Evento {
     private Long id;
 
     @ManyToOne
-    @JoinColumn (name = "USUARIO")
+    @JoinColumn(name = "USUARIO")
     private Usuario usuario;
 
     private String nombre;
@@ -17,9 +19,18 @@ public class Evento {
     private String lugar;
     private String urlImagen;
     private String dificultad;
+    private Double CalEstimadasQuemadas;
 
 
-    public Evento(){}
+    @ManyToMany(mappedBy = "eventos")
+    private List<Usuario> usuarios = new LinkedList<>();
+
+    {
+
+    }
+
+    public Evento() {
+    }
 
 
     public Evento(String nombre, String descripcion, String lugar, String urlImagen, String dificultad, Usuario usuario) {
@@ -86,5 +97,22 @@ public class Evento {
 
     public void setDificultad(String dificultad) {
         this.dificultad = dificultad;
+    }
+
+    public Double getCalEstimadasQuemadas() {
+        return CalEstimadasQuemadas;
+    }
+
+    public void setCalEstimadasQuemadas(Double calEstimadasQuemadas) {
+        CalEstimadasQuemadas = calEstimadasQuemadas;
+    }
+
+    public List<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public void setUsuarios(Usuario usuarios) {
+        int Varid = this.id.intValue();
+        this.usuarios.add(Varid, usuario);
     }
 }
