@@ -56,8 +56,8 @@ public class EventoDaoImpl implements EventoDao {
 
 
     @Override
-    @PostConstruct
-    @Transactional
+    //@PostConstruct
+    //@Transactional
     public void crearEventos(){
 
         final Session session = sessionFactory.openSession();
@@ -107,11 +107,13 @@ public class EventoDaoImpl implements EventoDao {
         Suscripcion suscripcion1 = new Suscripcion(mtvandoni, evento1);
         Suscripcion suscripcion2 = new Suscripcion(mendezOng, evento1);
         Suscripcion suscripcion3 = new Suscripcion(mtvandoni, evento2);
+        Suscripcion suscripcion4 = new Suscripcion(dchamorro, evento3);
 
 
         session.save(suscripcion1);
         session.save(suscripcion2);
         session.save(suscripcion3);
+        session.save(suscripcion4);
 
     }
 
