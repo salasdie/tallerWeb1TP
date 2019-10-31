@@ -6,4 +6,5 @@ import org.springframework.ui.ModelMap;
 public interface ServicioLogin {
 
 	Usuario consultarUsuario(Usuario usuario);
+	Usuario consultarUsuarioPorId(long usuario);
 }

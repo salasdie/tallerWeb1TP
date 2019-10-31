@@ -1,6 +1,7 @@
 package ar.edu.unlam.tallerweb1.modelo;
 
 import javax.persistence.*;
+import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,6 +14,7 @@ public class Usuario {
 	private Long id;
 
 	private String nombreUsuario;
+	private String apellidoUsuario;
 	private String email;
 	private String password;
 	private String rol;
@@ -33,7 +35,12 @@ public class Usuario {
 			joinColumns = { @JoinColumn(name = "usuario_id") },
 			inverseJoinColumns = { @JoinColumn(name = "evento_id") }
 	)
-	Set<Evento> eventos = new HashSet<>();
+	private Set<Evento> eventos = new HashSet<>();
+	public void agregarEvento(Evento evento){
+		this.eventos.add(evento);
+		evento.setUsuario(this);
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -87,10 +94,23 @@ public class Usuario {
 		return IndiceMasaCorporal;
 	}
 
-	public void setIndiceMasaCorporal(double peso, double altura) {
-
-		this.IndiceMasaCorporal = peso/(altura*altura);
+	public String getApellidoUsuario() {
+		return apellidoUsuario;
 	}
+
+	public void setApellidoUsuario(String apellidoUsuario) {
+		this.apellidoUsuario = apellidoUsuario;
+	}
+
+	public void setIndiceMasaCorporal() {
+
+		this.IndiceMasaCorporal = this.peso/(this.altura*this.altura);
+		String cad = String.valueOf(this.IndiceMasaCorporal);
+		cad = cad.substring(0,5);
+		this.IndiceMasaCorporal = Double.parseDouble(cad);
+	}
+
+
 
 	public String getClasificacionImc() {
 		return ClasificacionImc;

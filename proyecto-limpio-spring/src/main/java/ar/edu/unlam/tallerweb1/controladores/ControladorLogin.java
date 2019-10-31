@@ -42,7 +42,7 @@ public class ControladorLogin {
 		if (usuarioBuscado != null) {
 			request.getSession().setAttribute("rol", usuarioBuscado.getRol());
 			request.getSession().setAttribute("nombre", usuarioBuscado.getNombreUsuario());
-
+			request.getSession().setAttribute("idusuario",usuarioBuscado.getId());
 			model.put("usuario",usuarioBuscado);
 			return new ModelAndView("redirect:/eventos",model	);
 		} else {

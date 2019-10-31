@@ -21,4 +21,9 @@ public class ServicioLoginImpl implements ServicioLogin {
 		return servicioLoginDao.consultarUsuario(usuario);
 	}
 
+	@Override
+	public Usuario consultarUsuarioPorId(long usuario) {
+		return servicioLoginDao.consultarUsuarioPorId(usuario);
+	}
+
 }

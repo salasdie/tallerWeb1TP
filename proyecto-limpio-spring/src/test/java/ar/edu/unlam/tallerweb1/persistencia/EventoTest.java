@@ -17,23 +17,31 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class EventoTest extends SpringTest {
 
     @Autowired
-
     private EventoDao dao;
+    @Test
+    @Transactional
+    @Rollback
+    public void agregarEventoAUsuario(){
+        Usuario seba = new Usuario();
+        getSession().save(seba);
 
+        Evento evento = new Evento();
+        getSession().save(evento);
+
+        seba.agregarEvento(evento);
+        getSession().update(seba);
+
+        Usuario usuarioBuscado = getSession().get(Usuario.class, seba.getId());
+        assertThat(usuarioBuscado.getEventos()).hasSize(1);
+    }
 
 
     @Test
     @Transactional
     @Rollback
     public void CrearYConsultarEventos() {
-
-
-
         List<Evento> listaEventos = dao.consultarEvento();
-
         assertThat(listaEventos.size()).isEqualTo(4);
-
-
     }
 
     @Test

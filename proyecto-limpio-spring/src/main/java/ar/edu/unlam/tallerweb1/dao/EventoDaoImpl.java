@@ -89,10 +89,11 @@ public class EventoDaoImpl implements EventoDao {
         mtvandoni.setPassword("123456");
         mtvandoni.setRol("Alumno");
             mtvandoni.setNombreUsuario("Micaela");
+            mtvandoni.setApellidoUsuario("Vandoni");
             mtvandoni.setEdad(24);
             mtvandoni.setPeso(65.5);
             mtvandoni.setAltura(1.68);
-            mtvandoni.setIndiceMasaCorporal(mtvandoni.getPeso(),mtvandoni.getAltura());
+            mtvandoni.setIndiceMasaCorporal();
 
         Usuario riverPLate = new Usuario();
         riverPLate.setEmail("riverplate@gmail.com");
@@ -106,18 +107,20 @@ public class EventoDaoImpl implements EventoDao {
         dchamorro.setPassword("12345");
         dchamorro.setRol("Profesor");
             dchamorro.setNombreUsuario("Debora");
+            dchamorro.setApellidoUsuario("Chamorro");
             dchamorro.setPeso(65.5);
             dchamorro.setAltura(1.68);
-            dchamorro.setIndiceMasaCorporal(dchamorro.getPeso(),dchamorro.getAltura());
+            dchamorro.setIndiceMasaCorporal();
 
         Usuario mendezOng = new Usuario();
             mendezOng.setEmail("mendezOng@gmail.com");
             mendezOng.setPassword("098766");
             mendezOng.setRol("Profesor");
             mendezOng.setNombreUsuario("Martin");
+            mendezOng.setApellidoUsuario("Mendez");
             mendezOng.setPeso(67.5);
             mendezOng.setAltura(1.68);
-            mendezOng.setIndiceMasaCorporal(mendezOng.getPeso(),mendezOng.getAltura());
+            mendezOng.setIndiceMasaCorporal();
 
         session.save(mtvandoni);
         session.save(riverPLate);
@@ -150,6 +153,8 @@ public class EventoDaoImpl implements EventoDao {
         session.save(evento3);
 
         session.save(evento4);
+        mtvandoni.agregarEvento(evento1);
+
     }
 
 }

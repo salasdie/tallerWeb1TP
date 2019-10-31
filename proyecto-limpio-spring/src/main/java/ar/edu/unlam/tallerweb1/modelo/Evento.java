@@ -114,8 +114,7 @@ public class Evento {
         return usuarios;
     }
 
-    public void setUsuarios(Usuario usuarios) {
-        int Varid = this.id.intValue();
-        this.usuarios.add(Varid, usuario);
+    public void setUsuarios(List<Usuario> usuarios) {
+        this.usuarios = usuarios;
     }
 }

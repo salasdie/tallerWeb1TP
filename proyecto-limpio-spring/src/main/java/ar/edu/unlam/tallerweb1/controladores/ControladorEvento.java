@@ -25,31 +25,43 @@ public class ControladorEvento {
 
 
     @RequestMapping(path = "/eventos", method = RequestMethod.GET)
-        public ModelAndView eventos() {
-            //servicioEvento.crearEventos();
-            ModelMap model = new ModelMap();
-           List<Evento> listaEventos = servicioEvento.consultarEvento();
+    public ModelAndView eventos() {
+        //servicioEvento.crearEventos();
+        ModelMap model = new ModelMap();
+        List<Evento> listaEventos = servicioEvento.consultarEvento();
 
-            model.put("eventos", listaEventos);
-
-            return new ModelAndView("eventos", model);
+        model.put("eventos", listaEventos);
+        List<String> dificultades = new ArrayList<>();
+        dificultades.add("alta");
+        dificultades.add("media");
+        dificultades.add("baja");
+        model.put("dificultades", dificultades);
+        return new ModelAndView("eventos", model);
     }
 
-    @RequestMapping(path = "/filtro-busquedaDificultad" ,method = RequestMethod.GET)
-    public ModelAndView filtrarPorDificultad(@RequestParam("dificultad") String dificultad , HttpServletRequest request) {
+    @RequestMapping(path = "/filtro-busquedaDificultad", method = RequestMethod.GET)
+    public ModelAndView filtrarPorDificultad(@RequestParam("dificultad") String dificultad, HttpServletRequest request) {
         ModelMap model = new ModelMap();
 
         List<Evento> listaEventosFiltrados = servicioEvento.consultarEventosDificultad(dificultad);
 
         model.put("eventos", listaEventosFiltrados);
-
-        return new ModelAndView("redirect:/eventos", model);
+        List<String> dificultades = new ArrayList<>();
+        dificultades.add("alta");
+        dificultades.add("media");
+        dificultades.add("baja");
+        model.put("dificultades", dificultades);
+        return new ModelAndView("eventos", model);
     }
 
     @RequestMapping(path = "/filtro-busquedaLugar", method = RequestMethod.GET)
     public ModelAndView filtrarPorLugar(@RequestParam("lugar") String lugar, HttpServletRequest request) {
         ModelMap model = new ModelMap();
-
+        List<String> dificultades = new ArrayList<>();
+        dificultades.add("alta");
+        dificultades.add("media");
+        dificultades.add("baja");
+        model.put("dificultades", dificultades);
         List<Evento> listaEventosFiltrados = servicioEvento.consultarEventosLugar(lugar);
         model.put("eventos", listaEventosFiltrados);
 
@@ -58,7 +70,7 @@ public class ControladorEvento {
 
     @RequestMapping(path = "/crear", method = RequestMethod.GET)
     public ModelAndView crear() {
-            servicioEvento.crearEventos();
+        servicioEvento.crearEventos();
         return new ModelAndView("redirect:/login");
     }
 

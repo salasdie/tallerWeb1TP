@@ -62,7 +62,7 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
                 <li class="nav-item nav-profile">
-                    <a href="/perfilUsuario"  methods="get"  class="nav-link">
+                    <a href="/proyecto_limpio_spring_war/perfilUsuario?id=${idusuario}" methods="get"  class="nav-link">
                         <div class="profile-image">
                             <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="profile image">
                             <div class="dot-indicator bg-success"></div>
@@ -75,7 +75,7 @@
                 </li>
                 <li class="nav-item nav-category">Menu</li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/proyecto_limpio_spring_war/perfilUsuario" methods="get">
+                    <a class="nav-link" href="/proyecto_limpio_spring_war/perfilUsuario?id=${idusuario}" methods="get">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Perfil</span>
                     </a>
@@ -105,23 +105,14 @@
                 <br>
                 <div class="row">
                     <div class="col-2">
-<%--                        <form action="filtro-busquedaDificultad" method="get">--%>
-<%--                            <div class="form-group">--%>
-<%--                                <label>Dificultad</label>--%>
-<%--                                <div class="input-group">--%>
-<%--                                    <input class="form-control" name="dificultad" id="eventosDificultad" type="text" value="">--%>
-<%--                                    <button class="btn btn-primary text-uppercase" type="submit">Buscar</button>--%>
-<%--                                </div>--%>
-<%--                            </div>--%>
-<%--                        </form>--%>
                         <form action="filtro-busquedaDificultad" method= "get">
                             <div class="form-group">
                                 <label>Dificultad</label>
                                 <div class="input-group">
                                     <select class="form-control" name="dificultad" id="eventosDificultad">
                                         <option value="">Seleccionar..</option>
-                                        <c:forEach items="${eventos}" var="evento">
-                                            <option value="${evento.dificultad}">${evento.dificultad}</option>
+                                        <c:forEach items="${dificultades}" var="dif">
+                                            <option value="${dif}">${dif}</option>
                                         </c:forEach>
                                     </select>
                                     <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
