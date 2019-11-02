@@ -97,7 +97,7 @@
                 <div class="row page-title-header">
                     <div class="col-6">
                         <div class="page-header">
-                            <h4 class="page-title">Eventos</h4>
+                            <h4 class="page-title">Ranking</h4>
                         </div>
                     </div>
                     <div class="col-6">
@@ -118,8 +118,8 @@
                                 <table class="table table-striped">
                                     <thead>
                                     <tr>
-                                        <th>Nombre</th>
-                                        <th>Actividades</th>
+                                        <th>Actividad</th>
+                                        <th>Cantidad de suscriptores</th>
 
                                         <th></th>
                                     </tr>
@@ -128,8 +128,8 @@
                                     <c:forEach items="${suscripcion}" var="sus">
                                         <tr>
 
-                                            <td>${sus.evento.id}</td>
-                                            <td>${sus.usuario.id}</td>
+                                            <td>${sus.evento.nombre}</td>
+                                            <td>${sus.cantidad}</td>
 
                                         </tr>
                                     </c:forEach>

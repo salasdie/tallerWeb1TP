@@ -1,6 +1,6 @@
 package ar.edu.unlam.tallerweb1.controladores;
 
-import ar.edu.unlam.tallerweb1.modelo.Suscripcion;
+import ar.edu.unlam.tallerweb1.modelo.EventoAgrupado;
 import ar.edu.unlam.tallerweb1.servicios.ServicioSuscripcion;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -20,7 +20,7 @@ public class ControladorSuscripcion {
     @RequestMapping(path = "/ranking", method = RequestMethod.GET)
     public ModelAndView ranking() {
         ModelMap model = new ModelMap();
-        List<Suscripcion> listaSuscripciones = servicioSuscripcion.ObtenerSuscripcionesPorRanking();
+        List<EventoAgrupado> listaSuscripciones = servicioSuscripcion.ObtenerSuscripcionesPorRanking();
 
         model.put("suscripcion", listaSuscripciones);
 

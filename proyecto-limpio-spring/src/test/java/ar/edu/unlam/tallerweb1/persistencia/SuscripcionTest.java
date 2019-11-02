@@ -3,10 +3,10 @@ package ar.edu.unlam.tallerweb1.persistencia;
 import ar.edu.unlam.tallerweb1.SpringTest;
 import ar.edu.unlam.tallerweb1.dao.SuscripcionDao;
 import ar.edu.unlam.tallerweb1.modelo.Evento;
+import ar.edu.unlam.tallerweb1.modelo.EventoAgrupado;
 import ar.edu.unlam.tallerweb1.modelo.Suscripcion;
 import ar.edu.unlam.tallerweb1.modelo.Usuario;
 import org.hibernate.Session;
-import org.hibernate.criterion.Projections;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.Rollback;
@@ -92,7 +92,7 @@ public class SuscripcionTest extends SpringTest {
                         .add(Projections.count("usuario")))
                         .list();*/
 
-        List<Suscripcion> listarCantidadDeEventosPorNombre = dao.ObtenerSuscripcionesPorRanking();
+        List<EventoAgrupado> listarCantidadDeEventosPorNombre = dao.ObtenerSuscripcionesPorRanking();
         assertThat(listarCantidadDeEventosPorNombre).hasSize(3);
 
 
