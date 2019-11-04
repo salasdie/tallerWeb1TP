@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Diego
-  Date: 21/10/2019
-  Time: 23:29
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -18,6 +11,7 @@
     <title>Eventos</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendor/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendor/iconfonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="vendor/iconfonts/ionicons/css/ionicons.css">
     <link rel="stylesheet" href="vendor/iconfonts/typicons/src/font/typicons.css">
     <link rel="stylesheet" href="vendor/iconfonts/flag-icon-css/css/flag-icon.min.css">
@@ -31,8 +25,6 @@
     <!-- End Layout styles -->
 </head>
 <body>
-
-
 <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -70,22 +62,34 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
                 <li class="nav-item nav-profile">
-                    <a href="#" class="nav-link">
+                    <a href="/proyecto_limpio_spring_war/perfilUsuario?id=${idusuario}" methods="get"  class="nav-link">
                         <div class="profile-image">
                             <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="profile image">
                             <div class="dot-indicator bg-success"></div>
                         </div>
                         <div class="text-wrapper">
-                            <p class="profile-name"></p>
-                            <p class="designation">Profesor</p>
+                            <p class="profile-name"  name="nombre">${nombre}</p>
+                            <p class="designation" name="rol">${rol}</p>
                         </div>
                     </a>
                 </li>
                 <li class="nav-item nav-category">Menu</li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/proyecto_limpio_spring_war/perfilUsuario?id=${idusuario}" methods="get">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Perfil</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/proyecto_limpio_spring_war/eventos">
                         <i class="menu-icon typcn typcn-document-text"></i>
                         <span class="menu-title">Eventos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/proyecto_limpio_spring_war/ranking">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Ranking</span>
                     </a>
                 </li>
             </ul>
@@ -95,51 +99,45 @@
             <div class="content-wrapper">
                 <!-- Page Title Header Starts-->
                 <div class="row page-title-header">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="page-header">
                             <h4 class="page-title">Ranking</h4>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="page-title">
-                            <h4 class="page-title">Dificultad: </h4>
-                            <form action="filtro-busqueda" method="get" >
-                                <input name="dificultad" id="eventos" type="text" value=""/>
-                                <button class="btn btn-sm btn-primary btn-block text-uppercase" type="submit">Buscar</button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
-                <!-- Page Title Header Ends-->
-                <div class="row">
-                    <div class="col-lg-12 grid-margin stretch-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <table class="table table-striped">
-                                    <thead>
-                                    <tr>
-                                        <th>Actividad</th>
-                                        <th>Cantidad de suscriptores</th>
 
-                                        <th></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <c:forEach items="${suscripcion}" var="sus">
+                <form action="filtro">
+                    <!-- Page Title Header Ends-->
+                    <div class="row">
+                        <div class="col-lg-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
                                         <tr>
+                                            <th>Actividad</th>
+                                            <th>Cantidad de suscriptores</th>
 
-                                            <td>${sus.evento.nombre}</td>
-                                            <td>${sus.cantidad}</td>
-
+                                            <th></th>
                                         </tr>
-                                    </c:forEach>
+                                        </thead>
+                                        <tbody>
+                                        <c:forEach items="${suscripcion}" var="sus">
+                                            <tr>
 
-                                    </tbody>
-                                </table>
+                                                <td>${sus.evento.nombre}</td>
+                                                <td>${sus.cantidad}</td>
+
+                                            </tr>
+                                        </c:forEach>
+
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
 
             </div>
             <!-- content-wrapper ends -->

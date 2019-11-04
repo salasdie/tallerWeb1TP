@@ -86,6 +86,12 @@
                         <span class="menu-title">Eventos</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/proyecto_limpio_spring_war/ranking">
+                        <i class="menu-icon typcn typcn-document-text"></i>
+                        <span class="menu-title">Ranking</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- partial -->
